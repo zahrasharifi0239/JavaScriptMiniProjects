@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0b67b;
+  font-family: "iransans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.panel-container {
+  background-color: #686483;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+  color: #949494;
+}
+
+.panel-container strong {
+  line-height: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.rating {
+  flex: 1;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px 5px;
+  background-color: #7a7888;
+  border-radius: 5px;
+}
+
+.rating:hover,
+.rating.active {
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.rating img {
+  width: 40px;
+}
+
+.rating small {
+  color: #949494;
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.rating:hover small,
+.rating.active small {
+  color: #3d3b3b;
+}
+
+.btn {
+  background-color: #230647;
+  color: #949494;
+  border: 0;
+  border-radius: 15px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.fa-heart {
+  color: rgb(94, 4, 4);
+  font-size: 30px;
+  margin-bottom: 10px;
+}

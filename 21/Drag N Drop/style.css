@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(35, 76, 109);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 5px rgb(153, 102, 8);
+  background: rgb(182, 146, 79);
+  border-radius: 25px;
+}
+
+.fill {
+  background-image: url(./img/draggable.jpg);
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.hold {
+  border: solid 5px #a8a6a6;
+
+}
+
+.hovered {
+  background-color: #333;
+  border-color: rgb(97, 96, 96);
+  border-style: dashed;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}

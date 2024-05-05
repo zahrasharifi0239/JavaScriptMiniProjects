@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #117bf5;
+  font-family: "iransans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h3 {
+  color: #cfc9c9;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+
+}
+
+textarea {
+  background-color: #ebbf8c;
+  border: none;
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+.tag {
+  background-color: #f0932b;
+  color: #e7e1e1;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #273c75;
+}

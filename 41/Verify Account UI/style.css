@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #094fdb;
+  font-family: "iransans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: #ece2e2;
+  border: 3px #d17c0c solid;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 1000px;
+  text-align: center;
+  color: #777;
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 30px;
+}
+
+.code {
+  border-radius: 15px;
+  font-size: 75px;
+  height: 120px;
+  width: 100px;
+  border: 1px solid #eee;
+  margin: 1%;
+  text-align: center;
+  font-weight: 300;
+  background-color: #ecb977;
+  color: #777;
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:valid {
+  border-color: #d17c0c;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+  color: #444242;
+}
+
+.info {
+  background-color: #ecb977;
+  display: inline-block;
+  padding: 10px;
+  line-height: 20px;
+  max-width: 400px;
+  color: #777;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .code-container {
+    flex-wrap: wrap;
+  }
+
+  .code {
+    font-size: 60px;
+    height: 80px;
+    max-width: 70px;
+  }
+}

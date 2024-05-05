@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(29, 40, 139);
+  font-family: "iransans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: rgb(226, 141, 45);
+}
+
+div {
+  position: absolute;
+  bottom: 20px;
+  background: rgb(226, 141, 45, 0.3);
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: darksalmon;
+  border: none;
+  text-align: center;
+  color: rgb(85, 83, 83);
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}

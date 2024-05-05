@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3d75cf;
+  font-family: "iransans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: rgb(73, 72, 72);
+}
+
+h2 {
+  position: absolute;
+  top: 10px;
+}
+
+.range-container {
+  position: relative;
+ 
+}
+
+input[type="range"] {
+  width: 300px;
+  margin: 18px 0;
+  -webkit-appearance: none;
+  background-color: #3d75cf;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"] + label {
+  background-color: #cec8c8;
+  position: absolute;
+  top: -25px;
+  left: 110px;
+  width: 80px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/* chrome & safari */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: rgb(238, 132, 11);
+  border-radius: 4px;
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  background: #cec8c8;
+  border-radius: 50%;
+  border: 1px solid  rgb(238, 132, 11);
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+/* firefox */
+
+input[type="range"] ::-moz-range-track {
+  background: rgb(238, 132, 11);
+  border-radius: 4px;
+  width: 100%;
+  height: 13px;
+  cursor: pointer;
+}
+
+input[type="range"] ::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 24px;
+  width: 24px;
+  background: #cec8c8;
+  border-radius: 50%;
+  border: 1px solid rgb(238, 132, 11);
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+/* IE */
+
+input[type="range"] ::-ms-track {
+  background: rgb(238, 132, 11);
+  border-radius: 4px;
+  width: 100%;
+  height: 13px;
+  cursor: pointer;
+}
+
+input[type="range"] ::-ms-thumb {
+  -ms-appearance: none;
+  height: 24px;
+  width: 24px;
+  background: #cec8c8;
+  border-radius: 50%;
+  border: 1px solid rgb(238, 132, 11);
+  margin-top: -7px;
+  cursor: pointer;
+}

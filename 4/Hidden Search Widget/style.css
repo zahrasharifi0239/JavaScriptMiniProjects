@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #f3bf84, #e4712f);
+  font-family: "iransans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  background-color: #ddcbcb;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  transition: width 0.3s ease;
+  display: none;
+}
+
+.btn {
+  background-color: #ddcbcb;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+ border-radius: 15px;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: inline;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

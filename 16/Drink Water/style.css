@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9bcdf7;
+  color: #0e2761;
+  font-family: "iransans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 20px 0 0;
+  font-size: 100px;
+  color: #0e2761;
+}
+
+h3 {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.container {
+  display: inline-flex;
+  gap: 400px;
+  margin-top: 6%;
+}
+
+.cup {
+  background-color: rgba(233, 227, 227, 0.9);
+  border: 4px solid #0e2761;
+  color: #0e2761;
+  border-radius: 0 0 80px 80px;
+  height: 330px;
+  width: 150px;
+  max-width: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cup.cup-small {
+  width: 50px;
+  height: 95px;
+  border-radius: 0 0 30px 30px;
+  background-color: rgba(233, 227, 227, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+  background-color: #6ab3f8;
+}
+
+.cups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 280px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: #3494e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+  font-size: large
+}
